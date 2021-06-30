@@ -2,18 +2,47 @@
   display: flex;
   align-content: flex-start;
   justify-content: space-between;
+  height: 15vh;
 }
 .Logo {
-  width: 100px;
+  display: flex;
 }
 
 .nav img {
-  width: 30px;
+  width: 4vh;
+  padding: 15%;
 }
 .nav {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .titulo {
   display: flex;
+  font-family: "Caveat";
+  font-weight: 700;
+  font-size: larger;
+  
+}
+.titulo h1 {
+  padding-left: 5%;
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .titulo h1 {
+    display: flex;
+    padding-left: 5%;
+    align-self: center;
+    font-size: medium;
+  }
+  .Logo {
+    width: 9vh;
+    height: 9vh;
+  }
+  .Header {
+    height: 9vh;
+    width: 100vw;
+  }
+
 }

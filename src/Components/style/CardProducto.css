@@ -1,10 +1,51 @@
 .imagenProducto {
-  width: 200px;
+  display: flex;
+  object-fit: cover;
+  max-width: 19.8vw;
+  height: 40vh;
+  border-radius: 13px 13px 0px 0px;
 }
 .CardProducto {
-  border: 1px solid;
-  box-sizing: border-box;
   display: inline-flex;
+  border: 3px solid;
+  box-sizing: border-box;
   flex-direction: column;
   align-items: center;
+  margin: 2%;
+  border-radius: 13px;
+  height: 60vh;
+  width: 20vw;
+}
+.fondoFoto {
+  background: rgba(201,211,212, 0.3);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-radius: 13px 13px 0px 0px;
+}
+.nombreMueble {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+  font-size: medium;
+  width: 100%;
+  margin: 0px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-right: 1px;
+  background-color: black;
+}
+
+.descrip {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .CardProducto {
+    width: 80%;
+  }
+  .imagenProducto {
+    max-width: 100%;
+  }
 }
