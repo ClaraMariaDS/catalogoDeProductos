@@ -1,17 +1,18 @@
 import React from 'react'
 
 
-function ModeloProducto (props){
+export default class ModeloProducto extends React.Component {
+    render () {
     return(
         <div>
-            <h1>{props.tituloProducto}</h1>
-            <img src={props.imagenProducto} alt="Imagen de producto" />
+            <h1>{this.props.match.tituloProducto}</h1>
+            <img src={this.props.imagenProducto} alt="Imagen de producto" />
             <ul>
-                <li><p>Madera:</p>{props.madera}</li>
-                <li><p>Terminación:</p>{props.terminacion}</li>
-                <li><p>Características:</p>{props.caracteristicas}</li>
-                <li><p>Variantes:</p>{props.variantes}</li>
-                <li><p>Tiempo de Realización:</p>{props.tiempo}</li>
+                <li><p>Madera:</p>{this.props.madera}</li>
+                <li><p>Terminación:</p>{this.props.terminacion}</li>
+                <li><p>Características:</p>{this.props.caracteristicas}</li>
+                <li><p>Variantes:</p>{this.props.variantes}</li>
+                <li><p>Tiempo de Realización:</p>{this.props.tiempo}</li>
             </ul>
             <table>
                 <tr>
@@ -25,14 +26,14 @@ function ModeloProducto (props){
                     <th>Alto</th>
                 </tr>
                 <tr>
-                    <th>{props.modelo}</th>
-                    <th>{props.largo}</th>
-                    <th>{props.profundidad}</th>
-                    <th>{props.alto}</th>
-                    <th>{props.valor}</th>                   
+                    <th>{this.props.modelo}</th>
+                    <th>{this.props.largo}</th>
+                    <th>{this.props.profundidad}</th>
+                    <th>{this.props.alto}</th>
+                    <th>{this.props.valor}</th>                   
                 </tr>
             </table>
         </div>
-    )
+        )
+    }
 }
-export default ModeloProducto

@@ -1,15 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import Card from './CardProducto.js'
 import "./style/Style.css"
-//import { BrowserRouter as Router } from "react-router-dom";
 
 function Categorias (props){
     return(
         <div>
         <div className="Categoria">
             <h1 className="titulosCategorias">Estanterías y Bibliotecas</h1>
+            <div>
+                <Link to= "/paginaEstatica"><h1>hola</h1></Link>
+            </div>
             <Card 
             imagen= {"/imagenes/sambiaTv.jpg"}
+            link= "/paginaEstática"
             nombreProducto="Sambia TV"
             descripcionProducto={<>Estantería rectangular para tv <br/>con estructura símil hierro desarmable.</>}/>
             <Card 
