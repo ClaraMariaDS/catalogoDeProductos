@@ -1,18 +1,18 @@
-import React from 'react';
-import Nav from './Components/Nav.js'
-import Presentacion from './Components/Presentacion.js'
+import React, {Component} from 'react';
+import Nav from './Components/Nav.jsx'
+import Presentacion from './Components/Presentacion.jsx'
 import Categorias from './Components/CategoriaProductos'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-export function App () {
+class App extends Component  {
+
+render(){
     return (
-        <Router>
         <div>
             <Nav/>
             <Presentacion/>
             <Categorias/>
         </div>
-        </Router>
     )
+}
 }
 export default App;

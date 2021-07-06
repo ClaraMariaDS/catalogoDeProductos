@@ -3,7 +3,7 @@ import ModeloProducto from '../Components/ModeloProducto.js'
 import { BrowserRouter, Switch, Route  } from "react-router-dom";
 
 
-function Productos (){
+function desayunadorEstiloMarcopolo (){
     return(
         <div>
                 <ModeloProducto
@@ -22,4 +22,4 @@ function Productos (){
         </div>
     )
 }
-export default Productos
+export default desayunadorEstiloMarcopolo

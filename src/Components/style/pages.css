@@ -1,0 +1,12 @@
+.imageBig {
+    max-width: 40vw;
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+}
+.main {
+    width: 90vw;
+}

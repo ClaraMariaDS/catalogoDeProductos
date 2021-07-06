@@ -1,11 +1,13 @@
-import React from 'react'
+import React, {Component} from 'react'
+import './style/pages.css'
 
-export default class paginaEstatica extends React.Component{
+export default class paginaEstatica extends Component{
     render(){
     return(
-        <div>
+        <div className='main' >
             <h1>Desayunador estilo marcopolo</h1>
-            <img src='/imagenes/desayunador.jpg' alt="Imagen de producto" />
+            <div className='mainDiv'>
+            <img className='imageBig' src='/imagenes/desayunador.jpg' alt="Imagen de producto" />
             <ul>
                 <li><p>Madera:</p>Eucaliptus</li>
                 <li><p>Terminación:</p>Lustre mate o brillante.</li>
@@ -13,6 +15,7 @@ export default class paginaEstatica extends React.Component{
                 <li><p>Variantes:</p>Estructura negra,  blanca o natural.</li>
                 <li><p>Tiempo de Realización:</p> 2 días</li>
             </ul>
+            
             <table>
                 <tr>
                     <th rowspan='1'>Modelo </th>
@@ -32,6 +35,7 @@ export default class paginaEstatica extends React.Component{
                     <th>$7500</th>                   
                 </tr>
             </table>
+            </div>
         </div>
     )
 }
